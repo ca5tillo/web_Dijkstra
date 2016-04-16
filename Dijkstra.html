@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilos.css">
+    <script src = "js/script.js"></script>
+	<script>
+//http://html5-demos.appspot.com/static/filesystem/filer.js/demos/index.html
+	</script>
+</head>
+<body>
+	<div id="contenedor">
+		<header><h1>Algoritmo de Dijkstra</h1></header>
+		<nav>
+
+			<div id="entrada">Entrada: Arrastre aqui su archivo .csv que contiene la matriz de costos.</div>
+			<div id="controles">
+				
+				<select name="selector_nodo" id="selector_nodo" class="btn">
+                    <option value="volvo">Nodo inicial</option>            
+                </select>
+				<a href="javascript:dijkstra()" class="btn">Ejecutar</a>
+				<a href="javascript:crearArchivo()" class="btn" data-tip="(Es valido si se ejecuta desde servidor)">crearArchivo</a>
+				<a href="filesystem:http://localhost/persistent/dijkstra.csv" class="btn" data-tip="(Es valido si se ejecuta desde servidor)" download="">Descargar Archivo</a>
+				
+			</div>
+		</nav>
+		<section id = "section"></section>
+		<aside></aside>
+		<footer></footer>
+	</div>
+</body>
+</html>
